@@ -1,0 +1,54 @@
+{
+  "roofingClients": [
+    {
+      "clientName": "Ajayi dunsin",
+      "productName": "Iron",
+      "productPrice": "$100",
+      "purchaseDate": "2022-05-23T07:00:00.000Z",
+      "productBrand": "Brand New",
+      "id": 2
+    },
+    {
+      "clientName": "Adekola oluwanifemi",
+      "productName": "Iron ",
+      "productPrice": "$400",
+      "purchaseDate": "2022-05-01T07:00:00.000Z",
+      "productBrand": "Brand New",
+      "id": 5
+    },
+    {
+      "clientName": "bisade",
+      "productName": "oil",
+      "productPrice": "$100",
+      "purchaseDate": "2022-05-10T07:00:00.000Z",
+      "productBrand": "Brand New",
+      "id": 7
+    },
+    {
+      "clientName": "bisade",
+      "productName": "oil",
+      "productPrice": "$100",
+      "purchaseDate": "2022-05-10T07:00:00.000Z",
+      "productBrand": "Brand New",
+      "id": 9
+    },
+    {
+      "clientName": "ade",
+      "productName": "iro",
+      "productPrice": "$200",
+      "purchaseDate": "2022-05-16T07:00:00.000Z",
+      "productBrand": "Brand New",
+      "id": 10
+    },
+    {
+      "clientName": "Adeola bamipe",
+      "productName": "sawdust",
+      "productPrice": "$200",
+      "purchaseDate": "2022-05-08T07:00:00.000Z",
+      "productBrand": "Brand New",
+      "id": 11
+    }
+  ],
+  "equipmentClients": [],
+  "electronicClients": {}
+}

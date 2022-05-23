@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Add Client Form</h2>
+<div mat-dialog-content>
+    <form [formGroup]="clientForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your Full name</mat-label>
+            <input matInput formControlName="clientName" placeholder="Fullname" type="text">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" >
+            <mat-label>Product name</mat-label>
+            <input matInput formControlName="productName" placeholder="Product name" type="text">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" >
+            <mat-label>Product price</mat-label>
+            <mat-select formControlName="productPrice" placeholder="price" type="number">
+                <mat-option value="$100">$100</mat-option>
+                <mat-option value="$200">$200</mat-option>
+                <mat-option value="$300">$300</mat-option>
+                <mat-option value="$400">$400</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" >
+            <mat-label>Choose a Date</mat-label>
+            <input matInput formControlName="purchaseDate" [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    
+        <mat-radio-group formControlName="productBrand" class="example-radio-group">
+            <label for="" class="pb-2">Product Brand type</label>
+            <mat-radio-button class="example-radio-button" *ngFor="let brand of brands" [value]="brand">
+                {{brand}}
+            </mat-radio-button>
+        </mat-radio-group>
+    </form>
+    <div mat-dialog-actions [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>close</button>
+        <button mat-raised-button color="primary" (click)="add()">{{actionBtn}}</button>
+    </div>
+    
+</div>
