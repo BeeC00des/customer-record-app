@@ -13,7 +13,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 
 export class AppComponent implements OnInit {
-  title = 'basic-app';
+  title = 'Customer-record-app ';
 
   displayedColumns: string[] = ['clientName', 'productName', 'productPrice', 'purchaseDate', 'productBrand', 'Action'];
   dataSource !: MatTableDataSource<any>;
