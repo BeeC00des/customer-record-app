@@ -31,7 +31,6 @@ export class DialogComponent implements OnInit {
       productBrand:['', Validators.required]
     })
 
-    // console.log(this.editData);
     if(this.editData){
       this.actionBtn = 'Update';
       this.clientForm.controls['clientName'].setValue(this.editData.clientName);

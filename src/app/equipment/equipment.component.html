@@ -1,1 +1,43 @@
-<p>equipment works!</p>
+<h2 mat-dialog-title>Add Client Form</h2>
+<div mat-dialog-content>
+    <form [formGroup]="equipForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your Full name</mat-label>
+            <input matInput formControlName="clientName" placeholder="Fullname" type="text">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" >
+            <mat-label>Product name</mat-label>
+            <input matInput formControlName="productName" placeholder="Product name" type="text">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" >
+            <mat-label>Product price</mat-label>
+            <mat-select formControlName="productPrice" placeholder="price" type="number">
+                <mat-option value="$250">$250</mat-option>
+                <mat-option value="$300">$200</mat-option>
+                <mat-option value="$350">$350</mat-option>
+                <mat-option value="$400">$400</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" >
+            <mat-label>Choose a Date</mat-label>
+            <input matInput formControlName="purchaseDate" [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    
+        <mat-radio-group formControlName="productBrand" class="radio-group">
+            <label for="" class="pb-2">Product Brand type</label>
+            <mat-radio-button class="radio-button" *ngFor="let iron of ironBrands" [value]="iron">
+                {{iron}}
+            </mat-radio-button>
+        </mat-radio-group>
+    </form>
+    <div mat-dialog-actions [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>close</button>
+        <button mat-raised-button color="primary" (click)="add()">{{actionBtn}}</button>
+    </div>
+</div>

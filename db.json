@@ -1,14 +1,6 @@
 {
   "roofingClients": [
     {
-      "clientName": "Ajayi dunsin",
-      "productName": "Iron",
-      "productPrice": "$100",
-      "purchaseDate": "2022-05-23T07:00:00.000Z",
-      "productBrand": "Brand New",
-      "id": 2
-    },
-    {
       "clientName": "Adekola oluwanifemi",
       "productName": "Iron ",
       "productPrice": "$400",
@@ -23,32 +15,33 @@
       "purchaseDate": "2022-05-10T07:00:00.000Z",
       "productBrand": "Brand New",
       "id": 7
-    },
-    {
-      "clientName": "bisade",
-      "productName": "oil",
-      "productPrice": "$100",
-      "purchaseDate": "2022-05-10T07:00:00.000Z",
-      "productBrand": "Brand New",
-      "id": 9
-    },
-    {
-      "clientName": "ade",
-      "productName": "iro",
-      "productPrice": "$200",
-      "purchaseDate": "2022-05-16T07:00:00.000Z",
-      "productBrand": "Brand New",
-      "id": 10
-    },
-    {
-      "clientName": "Adeola bamipe",
-      "productName": "sawdust",
-      "productPrice": "$200",
-      "purchaseDate": "2022-05-08T07:00:00.000Z",
-      "productBrand": "Brand New",
-      "id": 11
     }
   ],
-  "equipmentClients": [],
+  "equipmentClients": [
+    {
+      "clientName": "beehacks",
+      "productName": "steelar",
+      "productPrice": "$300",
+      "purchaseDate": "2022-05-16T07:00:00.000Z",
+      "productBrand": "Baosteel",
+      "id": 1
+    },
+    {
+      "clientName": "aj",
+      "productName": "steel",
+      "productPrice": "$300",
+      "purchaseDate": "2022-05-22T07:00:00.000Z",
+      "productBrand": "Baosteel",
+      "id": 2
+    },
+    {
+      "clientName": "mami",
+      "productName": "iron rod",
+      "productPrice": "$400",
+      "purchaseDate": "2022-05-03T07:00:00.000Z",
+      "productBrand": "Baosteel",
+      "id": 3
+    }
+  ],
   "electronicClients": {}
 }
